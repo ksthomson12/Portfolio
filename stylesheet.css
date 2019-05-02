@@ -1,0 +1,167 @@
+
+html{
+    font-family: "Quattrocento Sans",sans-serif;
+    color: #000;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align:  center;
+    padding-top: 10px;
+    letter-spacing: 2px
+    max-width: 1000px;
+  margin: auto;
+}
+/* nav bar styling below*/
+
+nav > ul
+ {
+    list-style: none;
+    margin-top: 0px;
+    padding-top: 5px;
+   padding-bottom: 10px;
+    text-align: center;
+    display: block;
+    border-bottom: solid 1px #ebebeb;
+    border-top: solid 1px #ebebeb;
+   position: fixed;
+    top: 0px;
+    width: 100%;
+   background-color: white;
+}
+
+nav > ul > li /* this is for everything inside listed items that are inside the unordered list that are in the specified nav*/
+{
+	font-size: 12px;
+    font-family: "Quattrocento Sans",sans-serif;
+    text-transform: uppercase;
+    display: inline; /* this makes the nav bar go in the horizontal direction */
+    padding: 25px; /*this adds the spacing between the nav links*/
+    letter-spacing: 0.15em;
+    color: rgb(48, 45, 45);
+
+}
+nav > ul > li > a /* in order to not have the links underlined you need to specify it directly to the 'a href' */
+{    
+    text-decoration: none;
+    cursor: pointer;
+}
+nav > ul > li > a:hover 
+{
+    color:transparent ;
+}
+nav > ul > li > a:visited {
+    color: black;
+}
+
+#welcome-section{
+ flex-direction: column;
+ text-align: center !important;
+ padding: 12px;
+ padding-bottom: 0px;
+
+}
+.main-head {
+   text-align:center;
+  margin: 0px;
+ font-size: 30px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 26px;
+  margin: 0px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+#icon{
+  height: 210px;
+  width: auto;
+}
+  #about-me{
+   text-align: center !important;
+   background-color: #3A94EF;
+   color: white;
+   box-sizing: inherit;
+   padding-top: 20px;
+   padding-bottom: 30px;
+   width: 100%;
+}
+
+#about-me p
+{ font-family: "Quattrocento Sans",sans-serif;
+ font-size: 20px;
+line-height: 2;
+ font-weight: 30;
+  flex-wrap: wrap;
+  margin-left: 100px;
+   margin-right: 100px;
+}
+  #project-title {
+    height: 25px;
+    letter-spacing: 3px;
+   font-family: "Quattrocento Sans",sans-serif;
+}
+  
+    
+.container{
+ display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+} 
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background-color: #3A94EF;
+}
+
+.column img {
+    margin-top: 8px;
+  vertical-align: middle;
+  
+}
+#projects{
+  padding:15px 25px;
+   }
+
+.project-tile {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+
+/*contact form*/
+#contact-form {
+    display: inline;
+  text-align: center;
+    font-size: 16px;
+    font-family: "Quattrocento Sans",sans-serif;
+    text-transform: uppercase;
+    
+}
+  #contact-form h3
+  {
+    font-size: 32px;
+  }
+
+  footer {
+    font-size:14px; 
+      text-align: right;
+    background-color: #AEB6BF;
+    padding: 1px; 
+    text-transform: uppercase;
+    
+  }
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
